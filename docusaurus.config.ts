@@ -10,15 +10,17 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.marupopo.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Andromedasm', // Usually your GitHub org/user name.
+  projectName: 'docusaurus-github', // Usually your repo name.
+
+  trailingSlash: true, // 或者 false，根据需求选择
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -132,6 +134,11 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+    },
+    algolia: {
+      appId: 'O11SPQDWM1', // 从邮件中复制的 appId
+      apiKey: 'a9cb3a768bd1cfbda7f5d27ac76e1a0f', // 从邮件中复制的 apiKey
+      indexName: 'marupopo', // 从邮件中复制的 indexName
     },
     prism: {
       theme: prismThemes.github,
